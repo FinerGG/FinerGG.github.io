@@ -87,17 +87,16 @@ body::before {
     font-size: medium;
 }
 
-.social-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.5rem;
-    transition: transform 0.3s, color 0.3s;
+.social-links img {
+    width: 100px;
+    height: 100px;
+    margin-right: auto;
+    transition: transform 0.2s ease;
+    transition: 0.2s ease;
 }
 
-.social-links a:hover {
-    color: #ffd700;
-    transform: scale(1.2);
+.social-links img:hover {
+    transform: scale(1.2); /* ขยายเล็กน้อยเพื่อเพิ่มเอฟเฟกต์ */
 }
 
 footer {
