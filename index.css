@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    color: white;
+    color: black;
     background-image: url(imag/bg.jpg); /* ใส่ชื่อไฟล์รูปภาพพื้นหลัง */
     background-size: cover; /* ปรับให้รูปภาพขยายเต็มหน้าจอ */
     background-position: center; /* จัดรูปภาพให้อยู่กึ่งกลาง */
@@ -24,8 +24,8 @@ body::before {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 150%;
+    height: 150%;
     background: rgba(0, 0, 0, 0.5); /* สีดำโปร่งใส (ค่าความจางอยู่ที่ 0.5) */
     z-index: -3; /* วางเลเยอร์ไว้ด้านหลังข้อความ */
 }
