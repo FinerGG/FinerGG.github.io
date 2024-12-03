@@ -42,7 +42,7 @@ body::before {
 }
 
 .navbar {
-    position: absolute;
+    position: center;
     top: 20px;
     width: 100%;
     display: flex;
