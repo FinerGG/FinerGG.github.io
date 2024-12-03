@@ -8,9 +8,9 @@ body {
     font-family: 'Arial', sans-serif;
     color: rgb(255, 255, 255);
     background-image: url(imag/bg.jpg); /* ใส่ชื่อไฟล์รูปภาพพื้นหลัง */
+    height: 75vh;
     background-size: cover; /* ปรับให้รูปภาพขยายเต็มหน้าจอ */
     background-position: center; /* จัดรูปภาพให้อยู่กึ่งกลาง */
-    height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
