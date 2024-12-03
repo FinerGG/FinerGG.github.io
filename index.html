@@ -11,10 +11,18 @@
 
 <body>
 
-    <video class="video-background" autoplay loop muted>
+<div class="video-container">
+        <!-- วิดีโอพื้นหลัง -->
+    <video class="video-background" autoplay loop muted playsinline>
         <source src="imag/1202.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    
+        <!-- Fallback ภาพนิ่ง -->
+    <div class="video-background-fallback">
+        <img src="imag/bg2.jpg" alt="Background">
+    </div>
+</div>
 
     <div class="navbar">
         <a href="about.html">About</a>
