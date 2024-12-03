@@ -30,19 +30,54 @@ body::before {
     z-index: -3; /* วางเลเยอร์ไว้ด้านหลังข้อความ */
 }
 
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 .video-background {
     position: fixed;
     top: 0;
     left: 0;
-    width: 105%;
-    height: 105%;
-    object-fit: cover; /* ปรับให้วิดีโอเต็มหน้าจอโดยไม่ยืดผิดสัดส่วน */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     opacity: 0.5;
-    z-index: -2; /* วางวิดีโอไว้เบื้องหลังเนื้อหา */
+    z-index: -2;
+}
+
+@media (max-width: 768px) {
+    .video-background {
+        opacity: 0.3;
+    }
+}
+
+.video-background-fallback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-background-fallback img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ซ่อน fallback เมื่อเบราว์เซอร์รองรับวิดีโอ */
+@supports (object-fit: cover) {
+    .video-background-fallback {
+        display: none;
+    }
 }
 
 .navbar {
-    position: center;
+    position: absolute;
     top: 20px;
     width: 100%;
     display: flex;
