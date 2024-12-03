@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    color: black;
+    color: white;
     background-image: url(imag/bg.jpg); /* ใส่ชื่อไฟล์รูปภาพพื้นหลัง */
     background-size: cover; /* ปรับให้รูปภาพขยายเต็มหน้าจอ */
     background-position: center; /* จัดรูปภาพให้อยู่กึ่งกลาง */
@@ -34,8 +34,8 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 105%;
-    height: 105%;
+    width: auto;
+    height: auto;
     object-fit: cover; /* ปรับให้วิดีโอเต็มหน้าจอโดยไม่ยืดผิดสัดส่วน */
     opacity: 0.5;
     z-index: -2; /* วางวิดีโอไว้เบื้องหลังเนื้อหา */
