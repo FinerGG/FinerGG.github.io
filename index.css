@@ -10,7 +10,7 @@ body {
     background-image: url(imag/bg.jpg); /* ใส่ชื่อไฟล์รูปภาพพื้นหลัง */
     background-size: cover; /* ปรับให้รูปภาพขยายเต็มหน้าจอ */
     background-position: center; /* จัดรูปภาพให้อยู่กึ่งกลาง */
-    height: 110vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
