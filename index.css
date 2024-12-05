@@ -112,17 +112,18 @@ body::before {
 }
 
 .profile h1 {
-    color: rgb(22-, 220, 220);
+    color: rgb(255, 255, 255);
     font-size: 2.5rem;
     margin: 20px 0 10px;
 }
 
 .profile h1 :hover {
-    filter: brightness(-2);
+    color: rgb(240, 240, 240);
+    filter: brightness(1);
 }
 
 .profile p {
-    color: rgb(200, 200, 200);
+    color: rgb(240, 240, 240);
     font-size: 1.2rem;
     margin-bottom: 20px;
     font-size: medium;
@@ -130,7 +131,8 @@ body::before {
 }
 
 .profile p :hover {
-    filter: bright(-2);
+    color: rgb(225, 225, 225);
+    filter: brightness(1);
 }
 
 .social-links {
