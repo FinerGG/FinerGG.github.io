@@ -118,11 +118,6 @@ body::before {
     transition: transform 0.3s ease;
 }
 
-.profile h1 :hover {
-    color: rgb(240, 240, 240);
-    filter: brightness(-1);
-}
-
 .profile p {
     color: rgb(240, 240, 240);
     font-size: 1.2rem;
@@ -131,9 +126,13 @@ body::before {
     transition: transform 0.3s ease;
 }
 
-.profile p :hover {
-    color: rgb(225, 225, 225);
-    filter: brightness(-1);
+.pro {
+    transition: transform 0.3s ease;
+    filter: brightness(1);
+}
+
+.pro :hover {
+    filter: brightness(0.3);
 }
 
 .social-links {
