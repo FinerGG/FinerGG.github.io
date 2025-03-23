@@ -97,6 +97,14 @@ body::before {
     color: #1a9cff;
 }
 
+.main {
+    margin: -20px;
+}
+
+.profile-img {
+    transition: src 0.5s ease-in-out;
+}
+
 .profile {
     display: flex;
     flex-direction: column;
@@ -110,13 +118,23 @@ body::before {
     border-radius: 50%;
     border: 5px solid white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.profile img:hover {
+    transform: rotate(360deg) scale(1.15);
+    transition: 0.5s ease;
 }
 
 .profile h1 {
     color: rgb(255, 255, 255);
     font-size: 2.5rem;
     margin: 20px 0 10px;
-    transition: transform 0.3s ease;
+    transition: filter 0.3s ease;
+}
+
+.profile h1:hover {
+    filter: brightness(0.7);
 }
 
 .profile p {
@@ -124,25 +142,11 @@ body::before {
     font-size: 1.2rem;
     margin-bottom: 20px;
     font-size: medium;
-    transition: transform 0.3s ease;
+    transition: filter 0.3s ease;
 }
 
-.pro h1 {
-    transition: transform 0.3s ease;
-    filter: brightness(1);
-}
-
-.pro h1:hover {
-    filter: brightness(0.3);
-}
-
-.pro p {
-    transition: transform 0.3s ease;
-    filter: brightness(1);
-}
-
-.pro p:hover {
-    filter: brightness(0.3);
+.profile p:hover {
+    filter: brightness(0.7);
 }
 
 .social-links {
